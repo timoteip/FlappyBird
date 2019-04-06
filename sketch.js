@@ -55,7 +55,7 @@ function draw() {
 
     // Cat timp jocul merge si nu ating nici un obstacol, scorul creste.
     if (run % 75 == 35 && run > 35 && (!hit)) {
-        score = score + 20;
+        score = score + 1;
     }
 
     // Adaug Highscore-u.
