@@ -117,8 +117,11 @@ function keyPressed() {
 
 // Press mouse to play.
 function mousePressed() {
-    bird.up();
-}
+    if(mouseX>0 && mouseX<width && mouseY>0 && mouseY<height) {
+      bird.up();
+      if(mouseX<250 || mouseX>350 || mouseY<300 || mouseY>350) return false; // Disable double tap zoom on mobile but allow click of reset button
+    }
+  }
 
 function tutorial() {
     textSize(30);
